@@ -1,7 +1,7 @@
 # Quotation Management
 
 ## Request Header (alway pass : token) 
-    You have to get from login method 
+    You have to get "token" from login method 
        
 # saveQuotation
 
