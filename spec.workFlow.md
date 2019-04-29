@@ -159,3 +159,33 @@
 }
 
 ```
+
+# sendMail
+
+## url
+
+    http://{processServer}/sendMail
+
+## request body
+
+```json
+
+{
+	"mailTo":"xxx@mail.co.th",
+	"subject":"tes subject",
+	"message":"yyyy"
+}
+    
+```
+
+## response (if success)
+
+```json
+
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+
+```
