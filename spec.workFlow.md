@@ -144,7 +144,7 @@
 
 ## url
 
-    http://{processServer}/delegateQuotation/{quotationNo}/{toSaleEmpId}
+    http://{processServer}/delegateQuotation/{quotationNo}/{fromSaleEmpId}/{toSaleEmpId}
 
 ## request body (No)
 

@@ -368,3 +368,61 @@
 }
 
 ```
+
+
+# getReportList
+
+## url
+    http://{processServer}/getReportList/{pageNo}/{pageSize}
+
+## request body (body empty = getAll)
+
+```json
+
+{
+	"startDate": "05/02/2020",
+	"endDate": "05/02/2020",
+	"orderField": "MEDIA_PLAN.CONNECTION",
+	"orderType": 1  // 1=asc, -1=desc
+}
+
+```
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [
+        {
+            "QUOTATION_NO": "FC2020020500348",
+            "CREATED_DATE": "05/02/2020",
+            "SERVICE_TYPE": "Private",
+            "CONNECTION": "VPN",
+            "SALE_EMP_NAME": "จงจิตร เครือศรี",
+            "DEPARTMENT": "GIS and Service Inventoy System",
+            "LOCATION": [
+                {
+                    "BUILDING_NAME": " อาคาร KSP",
+                    "HOUSE_NO": "296",
+                    "SUB_DISTRICT": "ห้วยขวาง",
+                    "DISTRICT": "ห้วยขวาง",
+                    "PROVINCE": "กรุงเทพมหานคร",
+                    "DOMESTIC_SPEED_MBPS": "100",
+                    "INTER_SPEED_MBPS": null,
+                    "MEDIA": "Fiber",
+                    "PDF_LCN": {
+                        "EQUIPMENT": "",
+                        "DW": "",
+                        "DISTANCE": ""
+                    },
+                    "DISTANCE": "0.43"
+                }
+            ]
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull",
+    "RESULT_TOTAL": 1
+}
+
+```
